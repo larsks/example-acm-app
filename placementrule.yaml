@@ -1,0 +1,11 @@
+apiVersion: apps.open-cluster-management.io/v1
+kind: PlacementRule
+metadata:
+  labels:
+    app: lars-acm-example
+  name: lars-acm-example-placement-1
+  namespace: lars-sandbox
+spec:
+  clusterSelector:
+    matchLabels:
+      name: zero

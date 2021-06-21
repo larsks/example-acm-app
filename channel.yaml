@@ -1,0 +1,7 @@
+apiVersion: apps.open-cluster-management.io/v1
+kind: Channel
+metadata:
+  name: larsks-example-k8s-app-channel
+spec:
+  pathname: https://github.com/larsks/example-k8s-app
+  type: GitHub

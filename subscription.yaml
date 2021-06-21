@@ -1,0 +1,13 @@
+apiVersion: apps.open-cluster-management.io/v1
+kind: Subscription
+metadata:
+  labels:
+    app: lars-acm-example
+  name: lars-acm-example-subscription-1
+  namespace: lars-sandbox
+spec:
+  channel: lars-sandbox/larsks-example-k8s-app-channel
+  placement:
+    placementRef:
+      kind: PlacementRule
+      name: lars-acm-example-placement-1
